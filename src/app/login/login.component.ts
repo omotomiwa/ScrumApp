@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Scrumuser, loginuser } from "../scrumuser";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,5 +11,5 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  scrumloginModel = new loginuser ( "tomiwa_chris@yahoo.com", "fnd13343094", "chatscrum");
 }
