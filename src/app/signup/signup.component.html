@@ -8,7 +8,7 @@
     <form #userSignupForm = "ngForm">
         <div class = "form_group">
             <label>Email</label>
-            <input type = "email"  name = "email" class = "form-control" [(ngModel)] = "scrumUserModel.email">
+            <input type = "email"  name = "email" #email = "ngModel" class = "form-control" [(ngModel)] = "scrumUserModel.email">
         </div>
 
         <div class = "form_group">
