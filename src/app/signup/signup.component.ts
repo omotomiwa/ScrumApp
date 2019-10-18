@@ -13,5 +13,5 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
   userTypes = ["regular user", "project owner"];
-  scrumUserModel = new Scrumuser ("Tomiwa", "tomiwa_chris@yahoo.com", "fnd13343094", "regular user");
+  scrumUserModel = new Scrumuser ("", "", "", "");
 }
