@@ -8,11 +8,8 @@ import { ScrumdataService } from "../scrumdata.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  scrumUserLoginData = {}
-  public user = {'email': '',
-               'password': '',
-                "project": ""
-              }
+  scrumUserLoginData = {email:"", password: "", project: ""}
+  
 
   constructor(private _scrumdataService: ScrumdataService){}
 
