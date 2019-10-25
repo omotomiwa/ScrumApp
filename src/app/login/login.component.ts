@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  scrumloginModel = new loginuser ( "", "", "");
+  scrumloginModel = new loginuser ( "", "", "", );
 
   onLoginSubmit(){
     this._scrumdataService.login(this.scrumUserLoginData).subscribe(
