@@ -23,10 +23,11 @@ export class LoginComponent implements OnInit {
       data => {
         console.log("Success!", data)
         localStorage.setItem("token", data.token)
-        this._router.navigate(["/scrumboard"])
+        this._router.navigate(["/scrumboard", data["project_id"]])
       },
       error => {
         console.log("Error!", error)
+        alert("Login failed")
       }
     )
   }

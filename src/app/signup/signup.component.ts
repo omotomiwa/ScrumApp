@@ -29,7 +29,7 @@ export class SignupComponent implements OnInit {
       },
       error => {
         console.error("Error", error)  
-        this.feedbk = "Signup Failed"
+        alert(this.feedbk = "Signup Failed")
       }
     )
   }
